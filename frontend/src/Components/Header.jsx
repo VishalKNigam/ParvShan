@@ -15,7 +15,7 @@ const Header = () => {
               Cart
               </Nav.Link>
             <Nav.Link href="#link">
-            <i class="fa-solid fa-user"></i>
+            <i className="fa-solid fa-user"></i>
             &nbsp;
               Sign In
               </Nav.Link>
