@@ -1,21 +1,23 @@
-import { Container, Row, Col } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 import './App.css';
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
-import HomeScreen from "./screens/HomeScreen";
+import { BrowserRouter as Router } from "react-router-dom"
+import {AllRoutes} from "./screens/AllRoutes";
 function App() {
   return (
-    <>
-    <Header />
-      <main>
+    <Router>
+      <Header />
+      <main className="my-3">
         <Container>
-          
+
           <h1>Parv-Shan</h1>
-          <HomeScreen />
+          
+          <AllRoutes />
         </Container>
       </main>
       <Footer />
-    </>
+    </Router>
   );
 }
 
